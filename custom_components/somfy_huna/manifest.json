@@ -1,0 +1,17 @@
+{
+  "domain": "somfy_huna",
+  "name": "Somfy Huna Blinds",
+  "bluetooth": [
+    { "manufacturer_id": 1480, "connectable": true },
+    { "local_name": "MyHunaBlind*", "connectable": true }
+  ],
+  "codeowners": ["@haaaarps"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/haaaarps/hass-somfy-huna",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/haaaarps/hass-somfy-huna/issues",
+  "requirements": ["bleak-retry-connector>=3.5.0"],
+  "version": "0.1.0"
+}

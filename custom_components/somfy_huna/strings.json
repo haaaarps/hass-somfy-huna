@@ -1,0 +1,51 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Add a Somfy Huna blind",
+        "description": "Pick a blind that Home Assistant can hear over Bluetooth.",
+        "data": {
+          "address": "Blind",
+          "name": "Name"
+        }
+      },
+      "confirm": {
+        "title": "Add {name}?",
+        "description": "No pairing is needed. The blind stays usable from the Huna app and wall switch.",
+        "data": {
+          "name": "Name"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This blind is already set up.",
+      "no_devices_found": "No Somfy Huna blinds are in range of a connectable Bluetooth adapter or proxy."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "invert_position": "Swap open and closed"
+        },
+        "data_description": {
+          "invert_position": "Turn on if the blind opens when you press close."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery_level": {
+        "name": "Battery level",
+        "state": {
+          "critical": "Critical",
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        }
+      }
+    }
+  }
+}
